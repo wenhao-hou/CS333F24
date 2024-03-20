@@ -1,0 +1,10 @@
+flask
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+google-cloud-datastore
+authlib
+sqlite3
+os-win  # only necessary if you're running on a Windows OS
+logging  # part of the Python Standard Library, so no need to include it in requirements.txt

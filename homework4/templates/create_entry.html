@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Entry</title>
+</head>
+<body>
+    <h1>Submit New Entry</h1>
+    <form method="post" action="{{ url_for('create_entry') }}">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br>
+
+        <label for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address" required><br>
+
+        <label for="type_of_service">Type of Service:</label>
+        <input type="text" id="type_of_service" name="type_of_service" required><br>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" required><br>
+
+        <label for="hours_of_operation">Hours of Operation:</label>
+        <input type="text" id="hours_of_operation" name="hours_of_operation" required><br>
+
+        <label for="reviews">Reviews:</label>
+        <textarea id="reviews" name="reviews"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Entries</title>
+</head>
+<body>
+    <h1>All Entries</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Street Address</th>
+            <th>Type of Service</th>
+            <th>Phone Number</th>
+            <th>Hours of Operation</th>
+            <th>Reviews</th>
+        </tr>
+        {% for entry in entries %}
+        <tr>
+            <td>{{ entry.name }}</td>
+            <td>{{ entry.description }}</td>
+            <td>{{ entry.street_address }}</td>
+            <td>{{ entry.type_of_service }}</td>
+            <td>{{ entry.phone_number }}</td>
+            <td>{{ entry.hours_of_operation }}</td>
+            <td>{{ entry.reviews }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

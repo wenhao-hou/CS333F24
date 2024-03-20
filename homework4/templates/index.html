@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Service Directory Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Our Service Directory</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('create_entry') }}">Submit a New Service Entry</a></li>
+            <li><a href="{{ url_for('view_entries') }}">View Existing Service Entries</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
